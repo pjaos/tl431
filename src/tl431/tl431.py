@@ -193,8 +193,8 @@ def main():
     try:
         parser = argparse.ArgumentParser(description="Calculate TL431 resistor divider + series resistor values for target Vout.",
                                          formatter_class=argparse.RawDescriptionHelpFormatter)
-        parser.add_argument('--vin', type=float, help='The minimum input voltage (V)')
-        parser.add_argument('--vout', type=float, help='Required output voltage (V)')
+        parser.add_argument('--vin', type=float, help='The minimum input voltage (V)', required=True)
+        parser.add_argument('--vout', type=float, help='Required output voltage (V)', required=True)
         parser.add_argument('-s', dest='e_series', type=str, default='default', \
                 choices=['default', 'e12', 'e24', 'e48', 'e96', 'e192'], \
                 help='E series')
