@@ -1,0 +1,27 @@
+[project]
+name = "tl431"
+version = "0.1.0"
+description = ""
+authors = [
+    {name = "Paul Austen",email = "pjaos@gmail.com"}
+]
+readme = "README.md"
+requires-python = ">=3.12"
+dependencies = [
+]
+
+[tool.poetry]
+packages = [{include = "tl431", from = "src"}]
+
+[tool.poetry.dependencies]
+python = ">=3.12,<3.14"
+
+# Cross-platform packages
+texttable = "*"
+
+[tool.poetry.scripts]
+tl431 = "tl431.tl431:main"
+
+[build-system]
+requires = ["poetry-core>=2.0.0,<3.0.0"]
+build-backend = "poetry.core.masonry.api"
