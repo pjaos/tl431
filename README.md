@@ -1,4 +1,5 @@
 # TL431 Resistor Calculator
+The TL431 is a Precision Programmable Reference device. The TL431 data sheet can be found [here](https://www.ti.com/lit/ds/symlink/tl431.pdf).
 
 This tool calculates possible resistor divider values R1, R2, and a series resistor Rs for a TL431 adjustable shunt regulator.
 It searches across standard resistor values (E-series) and reports practical solutions that meet current constraints.
